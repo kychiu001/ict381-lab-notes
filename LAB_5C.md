@@ -335,28 +335,30 @@ Create the following files with the following contents.
 ## Task 1: Adding SSH key to Jenkins to access the GitHub repository
 
 1. From the Jenkins dashboard, click on **Manage Jenkins** located on the left menu.
+<img width="1086" height="612" alt="image" src="https://github.com/user-attachments/assets/dfd3d359-4bf6-4313-b138-666f78cc420c" />
 
-2. Click on **Credentials** under the Security section.
 
-3. Click on the **global** link.
+3. Click on **Credentials** under the Security section.
 
-4. Click **+ Add Credentials**.
+4. Click on the **global** link.
 
-5. Under **Kind**, select **SSH Username with private key**.
+5. Click **+ Add Credentials**.
 
-6. Under **ID**, enter `my-keys`.
+6. Under **Kind**, select **SSH Username with private key**.
 
-7. Under **Private Key**, select **Enter Directly**.
+7. Under **ID**, enter `my-keys`.
 
-8. Click **Add**.
+8. Under **Private Key**, select **Enter Directly**.
 
-9. Paste in the contents of the private key file `id_rsa`. You can find the file located in your developer machine under `.ssh` folder.
+9. Click **Add**.
+
+10. Paste in the contents of the private key file `id_rsa`. You can find the file located in your developer machine under `.ssh` folder.
 
    ![](images/lab5C/jenkins-add-private-key.png)
 
-10. Click **Create**.
+11. Click **Create**.
     
-11. You should see the credentials added to Jenkins.
+12. You should see the credentials added to Jenkins.
 
     ![](images/lab5C/jenkins-credentials-added.png)
 
